@@ -1,0 +1,6 @@
+.container {
+  display: flex;
+  flex-direction: line;
+  justify-content: center;
+  width: 90%;
+}
