@@ -1,22 +1,33 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { setUserName } from '../redux/slices/generalSlice';
+import { setUserInfo } from '../redux/slices/generalSlice';
+import { getAndSetInfo } from '../services/apiRequests';
 
 
 export default function Main() {
   const navigate = useNavigate()
   const dispatch = useDispatch()
-  const [user, setUser] = useState("");
+  const [userName, setUserName] = useState("");
+  const [foundUserFlag, setFoundUserFlag] = useState(true);
 
-  const handleClick = () => {
-    dispatch(setUserName(user))
+  const handleClick = async () => {
+    let foundUser = true
+    let userInfor
+    try {
+      userInfor = await getAndSetInfo(userName)
+    } catch (error) {
+      foundUser = false
+    }
+    
+    setFoundUserFlag(foundUser)
+    dispatch(setUserInfo(userInfor))
     navigate('/report');
   };
 
   const handleChange = ({ target }) => {
     const { value } = target;
-    setUser(value);
+    setUserName(value);
   };
  
   return (
@@ -27,18 +38,19 @@ export default function Main() {
           className=""
           type="text"
           name="user"
-          value={ user }
+          value={ userName }
           onChange={ handleChange }
         />        
         <button
           type="button"
-          // disabled={ emailTest || passwordTest }
+          disabled={ userName.length === 0 }
           onClick={ handleClick }
           className=""
         >
-          Entrar
+          Pesquisar
         </button>
       </form>
+      {!foundUserFlag && <p>Usuário não encontrado no github. Verifique se você digitou o nome corretamente</p>}
     </div>
   );
 }
