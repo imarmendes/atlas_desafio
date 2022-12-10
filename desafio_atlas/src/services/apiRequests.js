@@ -37,7 +37,7 @@ export async function getAndSetInfo(userName) {
     profile = await requestProfile(userName)
     repos = await requestRopositories(userName)      
   } catch (error) {
-    throw Error()
+    throw new Error()
   }
   
   return { userName, profile, repos }    
