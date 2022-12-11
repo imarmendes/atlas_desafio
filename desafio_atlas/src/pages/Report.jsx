@@ -6,10 +6,10 @@ import '../css/report.css';
 export default function Report() {
   return (
     <div className="container">  
-      <div>
+      <div className="profile">
         <Profile />
       </div>
-      <div>
+      <div className="repositories">
         <Repositories />
       </div>
     </div>

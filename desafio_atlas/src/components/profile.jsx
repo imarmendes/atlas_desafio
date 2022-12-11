@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { ExternalLink } from 'react-external-link';
-import { Img } from 'react-image';
 import { useSelector } from 'react-redux';
 import '../css/profile.css';
 
@@ -10,28 +8,29 @@ export default function Profile() {
 
   return (
     <div className="">
-      <div className="">
-        <Img
+      <div >
+        <img
+          className="image"
           src={avatar_url}
           alt={name}
         />
       </div>
       <div className="">
-        <div className="">
+        <div className="name">
           <p>{name}</p>
         </div>
-        <div className="">
+        <div className="id">
           <p>{login}</p>
         </div>  
-        <div className="" >
-          <button>Follow</button>
+        <div  >
+          <button className="followbtn" >Follow</button>
         </div>  
-        <div className="">
-          <ExternalLink href={`https://github.com/${login}`}>
+        <div >
+          <a  href={`https://github.com/${login}`} className="link">
             @{login}
-          </ExternalLink>
+          </a>
         </div>      
-        <div className="">
+        <div className="followInfo">
           <p>{followers} followers</p>
           <p>{following} following</p>
         </div>

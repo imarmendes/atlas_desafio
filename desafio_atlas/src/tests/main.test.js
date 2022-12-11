@@ -17,7 +17,6 @@ describe('Testando a tela inicial de buscas.', () => {
   })
 
   it('Testa casos de entradas invalidas.', () => {
-    const erro = new Error()
     customRender(<Main />, '/')
     const pesquisarBtn = screen.getByRole('button', { name: /pesquisar/i })
     const inputText = screen.getByRole('textbox')
