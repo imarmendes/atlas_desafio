@@ -1,0 +1,13 @@
+.repositories {
+  font-size: 29px;
+  margin-bottom: 0;
+}
+
+.repositoriesName {
+  margin-bottom: 60´x;
+}
+
+.repositoriesName p {
+  margin-bottom: 5px;
+  border-bottom:1px solid #666
+}

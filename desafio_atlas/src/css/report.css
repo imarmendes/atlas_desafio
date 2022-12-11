@@ -1,6 +1,16 @@
 .container {
   display: flex;
+  margin: 0 auto;
   flex-direction: line;
   justify-content: center;
   width: 90%;
+  justify-content: center;
+}
+
+.profile {
+  width: 40%;
+}
+
+.repositories {
+  width: 60%;
 }

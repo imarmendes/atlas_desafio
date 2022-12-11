@@ -1,0 +1,67 @@
+.divmain {
+  align-items: center;
+  align-content: center;
+  margin: auto;
+}
+
+.button-31 {
+  background-color: #222;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+  max-width: 35;
+  max-height: 350px;
+  min-height: 30px;
+  min-width: 10px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  width: 150px;
+  height: 30px;
+}
+
+.button-31:hover,
+.button-31:focus {
+  opacity: .75;
+}
+
+.title {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.alert {
+  font-size: 14px;
+  color: red;
+  margin-top: 2px;
+}
+
+.input {
+  writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: fieldtext;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: auto;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  background-color: field;
+  margin: 0em;
+  padding: 1px 2px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+}
+

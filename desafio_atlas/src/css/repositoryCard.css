@@ -1,0 +1,27 @@
+.title {
+  color: rgb(43, 114, 168);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.base {
+  display: flex;
+  flex-direction: line;
+  
+}
+
+.base p {
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+.card {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-bottom:1px solid #666
+}
+
+.description p {
+  font-size: 16px;
+}
