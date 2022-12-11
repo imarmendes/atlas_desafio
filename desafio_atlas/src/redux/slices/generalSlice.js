@@ -20,24 +20,6 @@ export const generalSlice = createSlice({
       }
     },    
   },
-  // extraReducers: (builder) => {
-  //   builder
-  //     .addCase(setUserInfoAsync.fulfilled, (state, action) => {
-  //       state.userName = action.payload.userName;
-  //       state.profile = action.payload.profile;
-  //       state.repositories = action.payload.repos;
-  //       state.findHistory = [...state.findHistory, action.payload.userName]
-  //     })
-        
-  //     .addCase(setUserInfoAsync.pending, (state, action) => {
-  //       console.log("Loading");
-  //     })
-
-  //     .addCase(setUserInfoAsync.rejected, (state, action) => {
-  //       console.log("rejected");
-  //       throw Error()
-  //     });
-  //   }
 })
 
 export const { setUserInfo } = generalSlice.actions
