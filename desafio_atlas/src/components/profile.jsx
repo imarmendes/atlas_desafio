@@ -4,8 +4,6 @@ import { Img } from 'react-image';
 import { useSelector } from 'react-redux';
 import '../css/profile.css';
 
-
-
 export default function Profile() {
   const [profile] = useState(useSelector((state) => state.general.profile))
   const { name, avatar_url, login, email, followers, following } = profile;
