@@ -1,19 +1,5 @@
+// const axios = require('axios')
 import axios from 'axios';
-
-// export async function requestProfileAndRepos(userName){
-
-//   const URL = `https://api.github.com/users/${userName}`;
-//   let profile;
-//   try {
-//     profile = await axios.get(URL);
-    
-//   } catch (error) {
-//     throw Error("User not found.")
-//   }
-//   const data = await profile.data;
-//   const repos = requestRopositories(userName);
-//   return { userName, profile: data, repos};
-// }
 
 export async function requestRopositories(userName){
   const URL = `https://api.github.com/users/${userName}/repos`;
