@@ -1,5 +1,11 @@
 # Desafio Atlas - Github Profile and Repositories
 
+# Acesso a aplicação
+## A aplicação foi hospeda na vercel e pode ser acessada no link abaixo:
+## https://atlas-desafio-imarmendes.vercel.app/
+
+
+#
 # Contexto
 Este projeto trata-se de um desafio da Atlas GR, que preve a construção de duas páginas:
   1. Página com espaço para buscar por um usuário do github.
@@ -41,7 +47,7 @@ git clone git@github.com:imarmendes/atlas_desafio.git
     npm start
   ``` 
 * Acesse o link abaixo.
-http://localhost:3000/
+ > http://localhost:3000/
 
 
 
@@ -53,3 +59,4 @@ http://localhost:3000/
     cd desafio_atlas/ &&
     npm test
   ```
+  - Após o comando, é possivel que seja necessário apertar "a" no terminal para execultar todos os teste.
