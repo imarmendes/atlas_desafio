@@ -33,6 +33,7 @@ git clone git@github.com:imarmendes/atlas_desafio.git
     docker build -t desafioAtlas . &&
     docker run desafioatlas
   ``` 
+  - Após os comando acima acesse o endereço listado a frente da chave "On Your Network" que consta no seu terminal.
 ## Rodando Local
   ```
     cd desafio_atlas/ &&
