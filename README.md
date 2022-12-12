@@ -1,46 +1,54 @@
-# My Awesome Project
+# Desafio Atlas - Github Profile and Repositories
 
 # Contexto
-Este projeto trata-se de uma ferramenta de back-office para armazenar e buscar dados de erros que ocorreram com clientes.
+Este projeto trata-se de um desafio da Atlas GR, que preve a construção de duas páginas:
+  1. Página com espaço para buscar por um usuário do github.
+  2. Página para exibir o perfil e os repositórios do usuário pesquisado.
+
+No desafio é proposto que se use como principal tecnologia o React.
 
 ## Técnologias usadas
 
-Front-end:
-> Desenvolvido usando: React, Redux, CSS3, HTML5, Redis, ES6
+Front-end - Desenvolvido usando: 
+* React - Tecnologia principal para componentização e contrução das páginas.
+* Redux toolkit - Gerenciamento de estado e troca de dados entre as páginas.
+* Jest/RTL - Para testes unitários. 
+* Axios - Para requisições a API externas.
+* CSS3 - Estilização das páginas.
+* HTML5 - Estrutura de exibição das páginas.
+* Docker - Como estrutura de container.
+* ESLint - Para padronização de código.
 
-Back-end:
-> Desenvolvido usando: NodeJS, ExpressJS, MongoDB, MYSQL, ES6
+# Clonar o projeto.
+> Execulte o comando abaixo no seu terminal.
+```
+git clone git@github.com:imarmendes/atlas_desafio.git
 
+```
 
-## Instalando Dependências
-
-> Backend
-```bash
-cd api/ 
-npm install
-``` 
-> Frontend
-```bash
-cd src/
-npm install
-``` 
-## Executando aplicação
-
-* Para rodar o back-end:
-
+# Para execultar o projeto
+## Rodando com Docker
   ```
-  cd api/ && npm start
+    cd desafio_atlas/ &&
+    docker build -t desafioAtlas . &&
+    docker run desafioatlas
+  ``` 
+## Rodando Local
   ```
-* Para rodar o front-end:
+    cd desafio_atlas/ &&
+    npm install &&
+    npm start
+  ``` 
+* Acesse o link abaixo.
+http://localhost:3000/
 
-  ```
-    cd src/ && npm start
-  ```
+
 
 ## Executando Testes
 
 * Para rodar todos os testes:
 
   ```
+    cd desafio_atlas/ &&
     npm test
   ```
