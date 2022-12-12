@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { Route, Routes } from "react-router-dom";
 import Main from "../pages/Main";
 import Report from "../pages/Report";
