@@ -7,7 +7,7 @@ export default function Profile() {
   const { name, avatar_url, login, email, followers, following } = profile;
 
   return (
-    <div className="">
+    <div >
       <div >
         <img
           className="image"
@@ -15,7 +15,7 @@ export default function Profile() {
           alt={name}
         />
       </div>
-      <div className="">
+      <div >
         <div className="name">
           <p>{name}</p>
         </div>
@@ -34,7 +34,7 @@ export default function Profile() {
           <p>{followers} followers</p>
           <p>{following} following</p>
         </div>
-        <div className="">
+        <div >
           <p>{email}</p>
         </div>
       </div>

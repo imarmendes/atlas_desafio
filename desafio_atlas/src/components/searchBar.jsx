@@ -20,11 +20,13 @@ export default function SearchBar() {
       setEmptyFieldFlag(false)
       let foundUser = true
       let userInfor
+      
       try {
         userInfor = await getAndSetInfo(userName)
       } catch (error) {
         foundUser = false
       }
+
       setFoundUserFlag(foundUser)
       if(foundUser){
         dispatch(setUserInfo(userInfor))

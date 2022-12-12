@@ -17,7 +17,6 @@ const customRender = (
     },
   });
 
-  // spread do retorno do render { getByTestId, getByRole, etc }
   return ({ ...render(
     <BrowserRouter history={ history }>
       <Provider store={ store }>
@@ -25,11 +24,7 @@ const customRender = (
       </Provider>
     </BrowserRouter>,
   ),
-
-  // history usado acima
   history,
-
-  // store usada acima
   store,
   });
 };

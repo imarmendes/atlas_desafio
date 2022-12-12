@@ -5,7 +5,7 @@ import RepositoryCard from './repositoryCard';
 
 export default function Repositories() {  
   const [repositories] = useState(useSelector((state) => state.general.repositories))
-  // console.log(repositories);
+
   return (
     <div className="repositories">
       <div className="repositoriesName">
@@ -14,7 +14,7 @@ export default function Repositories() {
       <div>
         {repositories.map((repository) => (
             <RepositoryCard key={ repository.name } repository={ repository } />
-          ))}
+        ))}
       </div>
     </div>
   );

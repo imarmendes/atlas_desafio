@@ -19,16 +19,16 @@ export default function RepositoryCard(props) {
           {description && <p>{description}</p>}
       </div>
       <div className="base">       
-        <div className="">
+        <div>
             {language && <p>{language}</p>}
         </div>
-        <div className="">
+        <div>
             {forks_count !== 0 && <p>{forks_count}</p>}
         </div>
-        <div className="">
+        <div>
             {license && <p>{license.name}</p>}
         </div>
-        <div className="">
+        <div>
             {updated_at && <p>Updated on {day + 1} {months[month]}</p>}
         </div>
       </div>

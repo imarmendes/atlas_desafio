@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable react/react-in-jsx-scope */
 import { fireEvent, screen } from "@testing-library/react";
 import userEvent from '@testing-library/user-event';
 import Main from "../pages/Main";
@@ -39,7 +41,7 @@ describe('Testando a tela inicial de buscas.', () => {
   it('Testa transição de tela, caso de sucesso.', async () => {
     customRender(<Main />, '/')
     const pesquisarBtn = screen.getByRole('button', { name: /pesquisar/i })
-    const inputText = screen.getByRole('textbox')
+    // const inputText = screen.getByRole('textbox')
 
     // userEvent.type(inputText, 'imarmendes');    
     fireEvent.change(screen.getByRole('textbox'), {target: {value: "imarmendes"}})

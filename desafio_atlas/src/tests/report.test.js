@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable react/react-in-jsx-scope */
 import { screen } from "@testing-library/react";
 import Report from "../pages/Report";
 import customRender from "./costomRender";
